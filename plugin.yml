@@ -1,0 +1,239 @@
+main: com.kraftykaleb.cakeessentials.CakeEssentials
+version: 2.0
+author: Kraft
+name: TMEssentials
+description: SoonTM Guild Essentials Core Plugin!
+
+commands:
+  help:
+    description: A detailed list of commands!
+#    usage: /<command>
+#    aliases: [?, bukkit:help, minecraft:help, bukkit:?]
+  fly:
+    description: Toggle fly mode!
+#    usage: /<command>
+#    aliases: [feed, h]
+  spawn:
+    description: Teleport to spawn!
+#    usage: /<command>
+#    aliases: [feed, h]
+  clear:
+    description: Clears your inventory!
+#    usage: /<command>
+    aliases: [clear, clearinventory]
+  fakejoin:
+    description: Broadcasts a fake join message!
+#    usage: /<command>
+#    aliases: [clear, clearinventory]
+  heal:
+    usage: /<command> <player>
+    aliases: [feed, h]
+    description: Heals the specified user!
+  tp:
+ #   usage: /<command> <player>
+    description: Teleports you to a player!
+  setspawn:
+#    usage: /<command>
+    description: Sets the spawn location!
+  tphere:
+    description: Teleports a player to you!
+    aliases: [s, tpme]
+  speed:
+    description: Change your speed of movement!
+  kit:
+    description: Select your kit!
+  back:
+    description: Go back to your death location!
+  fakeleave:
+    description: broadcast a fake leave message!
+  freeze:
+    description: Freezes the specified player!
+    usage: /<command> <player>
+  tpa:
+    description: Requests to teleport to a player!
+    usage: /<command> <player>
+  tpdeny:
+    description: Denys a pending request!
+    usage: /<command>
+    aliases: [tpno]
+  tpaccept:
+    description: Accepts a pending request!
+    usage: /<command>
+    aliases: [tpyes]
+  tpdebug:
+    description: A command to debug /tpa
+  nick:
+    description: Disguise youself as another player!
+  nickreset:
+    description: Unnick yourself!
+  afk:
+    description: Set yourself afk!
+  vanish:
+    description: Make yourself invisable!
+  coins:
+    description: Shows coins help.
+  whois:
+    description: Shows info on the player!
+  home:
+    description: Allows you to warp to your home!
+  sethome:
+    description: Allows you to set a home!
+  gamemode:
+    description: Allows you to change your gamemode!
+    aliases: [gm]
+  msg:
+    description: Allows you to message someone!
+    aliases: [tell, m]
+  r:
+    description: Allows you to reply to a message!
+    aliases: [reply]
+  invsee:
+    description: Allows you to open the inventory of another player!
+  userinfo:
+    description: Lets you see a player's stats!
+  ban:
+    description: Ban the specified player!
+  unban:
+    description: Unban the specified player!
+  sudo:
+    description: Forces someone to use a command!
+  sc:
+    description: Send a message to staffchat!
+  staff:
+    description: Check online staff members!
+  kick:
+    description: Kick a player from the server!
+  warp:
+    description: Warp to a warp that was set by an admin!
+  addwarp:
+    description: Add a warp at your current location!
+  enderchest:
+    description: Open someone's enderchest
+    
+permissions:
+  essentials.heal:
+    description: Allows you to heal yourself or others
+    default: op
+  essentials.invsee:
+    description: Allows you to open the inventory of another player!
+    default: op
+  essentials.gamemode:
+    description: Allows you to change your gamemode
+    default: op
+  essentials.afk:
+    description: Allows you to use /afk
+    default: op
+  essentials.chatcolor:
+    description: Changes your chatcolor!
+    default: op
+  essentials.nickreset:
+    description: Unnicks yourself!
+    default: op
+  essentials.nick:
+    description: Allows you to use /nick.
+    default: op
+  tpa.tpa:
+    description: Allows you to use the /tpa command.
+    default: true
+  tpa.tpaccept:
+    description: Allows you to use the /tpaccept command.
+    default: true
+  tpa.tpdeny:
+    description: Allows you to use the /tpdeny command.
+    default: true
+  essentials.tphere:
+    description: Allows you to teleport others to you!
+    default: op
+  essentials.speed:
+    description: Allows you to change your movement speed!
+    default: op
+  essentials.back:
+    description: Allows you to go back to your death location!
+    default: op
+  essentials.tp:
+    description: Allows you to teleport to others!
+    default: op
+  joins.message:
+    description: Allows join message to show
+    default: op
+  leaves.message:
+    description: Allows leave message to show
+    default: op
+  essentials.fly:
+    description: Use the /fly command
+    default: op
+  essentials.fly.others:
+    description: Toggle others fly mode
+    default: op
+  essentials.spawn.others:
+    description: Send someone to spawn
+    default: op
+  chat.master:
+    description: Get the [MASTER] prefix
+    default: false
+  chat.co:
+    description: Get the [COMASTER] prefix
+    default: false
+  chat.admin:
+    description: Get the [ADMIN] prefix
+    default: false
+  chat.mod:
+    description: Get the [MOD] prefix
+    default: false
+  chat.helper:
+    description: Get the [HELPER] prefix
+    default: false
+  chat.yt:
+    description: Get the [YT] prefix
+    default: false 
+  chat.vip:
+    description: Get the [VIP] prefix
+    default: false
+  chat.default:
+    description: Get the default prefix
+    default: false
+  clear.self:
+    description: Clear your inventory
+    default: op
+  clear.others:
+    description: Clear someones inventory
+    default: op
+  essentials.userinfo:
+    description: Check someone's stats!
+    default: op
+  essentials.ban.all:
+    description: Allows the user to ban opped players.
+    default: false
+  essentials.ban:
+    description: Allows the user to ban.
+    default: op
+  essentials.ban.admin:
+    description: Allows the user to not be banned by lesser players
+    default: op
+  essentials.unban:
+    description: Allows the user to unban any player
+    default: op
+  essentials.staffchat:
+    description: Allows the user to use staff chat
+    default: op
+  essentials.sudo:
+    description: Allows the user to force another user to run a command
+    default: op
+  essentials.staff:
+    description: Allows you to be on the staff list!
+    default: op
+  essentials.kick:
+    description: Allows you to kick someone
+    default: op
+  essentials.freeze:
+    description: Allows you to freeze someone
+    default: op
+  essentials.vip:
+    description: Allows someone to use vip stuff like setting more homes!
+    default: op
+  essentials.addwarp:
+    description: Allows you to set a warp
+    default: op
+  essentials.enderchest:
+    description: Allows you to open someone's enderchest
+    default: op

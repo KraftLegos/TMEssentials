@@ -1,0 +1,19 @@
+# CakeEssentials Plugin by Kraft
+#
+#
+# Version 1.0.0
+#
+#
+
+MOTD: '&cFactions is currently in the ALPHA stage! Please report any bugs to Kraft!'
+#Use %player% for player displayname
+JoinMessage: '&e%player% &ejoined.'
+LeaveMessage: '&e%player% &eleft.'
+spawn:
+  world: world
+  x: 0.00000003
+  y: 0.0
+  z: 0.000000009
+  pitch: 0.0
+  yaw: 0.0004
+balance:
